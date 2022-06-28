@@ -193,7 +193,6 @@ body{
     max-width: 1162px;
 
 }
-
 .main-wrapper aside{
     margin-right: 12px;
     margin-bottom: 12px;
@@ -392,11 +391,11 @@ body{
 .weather-india{
     grid-column: span 12;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 28px;
 }
 .weather-india section{
     margin: 0;
-    padding: 16px;
+    padding: 16px 16px 0 16px;
     height: 100%;
     border-radius: 6px;
     background-color: #fff;
@@ -510,13 +509,13 @@ body{
 .wbc2{
     margin-left: 16px;
 }
-.weather-foot footer{
+.weather-foot footer , .card1-foot footer{
     padding: 0;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 }
-.weather-foot footer a{
+.weather-foot footer a , .card1-foot footer a{
     font-size: 0.8125rem;
     font-weight: 700;
     line-height: 1.15;
@@ -527,3 +526,80 @@ body{
     padding: 8px 14px;
     margin: 5px;
 }
+
+.cards-1{
+    margin-bottom: 28px;
+    width: 100%;
+    grid-column: span 12;
+}
+.cards-1 section{
+    margin: 0;
+    height: 100%;
+    padding: 16px 16px 0 16px;
+    border-radius: 6px;
+    box-shadow: 0 0 12px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
+}
+.cards-1 section header{
+    padding: 0 0 16px 0;
+}
+.cards-1 section header h2{
+    padding: 0;
+    margin: 0;
+    color: #2b2b2b;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.2;
+    flex-grow: 1;
+}
+.card-sec{
+    display: flex;
+    flex-direction: row;
+}
+.card1{
+    border: 0;
+    flex: 1 1 0px;
+}
+.card1 a{
+    border: none;
+    background: none;
+    width: auto;
+    flex: 1 0 50%;
+}
+.card1-imag-wrapper{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-1-imag{
+    border-radius: 6px;
+    width: 100%; 
+}
+.card-1-imag img{
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+}
+.card1-text{
+    margin: 0 0 10px 0; 
+}
+.card1-text span{
+    font-size: 00.875rem;
+    font-weight: 400;
+    line-height: 1.25em;
+    color: #2b2b2b;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+.card1-a{
+    margin-left: 16px;
+}
+/* .card1-foot{
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+} */
