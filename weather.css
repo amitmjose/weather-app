@@ -10,11 +10,9 @@ body{
 }
 .header-wrapper{
     background-color: #005986;
-    
 }
 .weather-logo svg{
     padding: 5px;
-    cursor: pointer;
 }
 .weather-logo svg title{
     fill: #1b4de4;
@@ -30,6 +28,7 @@ body{
     margin-left: 15px;
     margin-right: 15px;
     height: 27px;
+    margin-bottom: 3px;
 }
 .toi-logo img{
     max-height: 24px;
@@ -74,8 +73,10 @@ body{
 .language{
     background: none;
     border: none;
-    padding: 1px 6px;
+    padding-bottom: 7px;
+    padding-left: 6px;
 }
+
 .earth{
     width: 24px;
     height: auto;
@@ -102,13 +103,12 @@ body{
 .hamburger button{
     background: none;
     border: none;
-    margin-right: 11px;
-    margin-left: 25px;
-    margin-top: 10px;
+    margin-right: 16px;
+    margin-left: 20px;
+    margin-top: 9px;
 }
 .ham{
     width: 30px;
-    height: 30px;
     fill: #fff;
 }
 .header1{
@@ -122,6 +122,8 @@ body{
     display: flex;
     align-items: center;
     padding-right: 30px;
+    padding-left: 6px;
+    padding-top: 3px;
 }
 .header-right-wrapper{
     display: flex;
@@ -191,7 +193,6 @@ body{
     grid-template-columns: minmax(0 , 1fr) 350px;
     column-gap: 12px;
     max-width: 1162px;
-
 }
 .main-wrapper aside{
     margin-right: 12px;
@@ -233,7 +234,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 98px;
+    height: 97px;
 }
 .main-content{
     margin-left: 12px;
@@ -597,9 +598,179 @@ body{
 .card1-a{
     margin-left: 16px;
 }
-/* .card1-foot{
+
+
+.card-2-vid{
+    position: relative;
+}
+.card-imag-vid{
+    position: absolute;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+}
+.card-imag-vid svg{
+    fill: #fff;
+}
+
+.org-foot{
+    background-color: #fff;
+    margin-top: 48px;
+}
+.footer-wrapper{
+    border-top: 1px solid #dedede;
+}
+.org-footr{
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 1138px;
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.social-wrapper{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+.social-wrapper span{
+    font-size: 1.125rem;
+    font-weight: 700;
+    align-items: center;
+    color: #2b2b2b;
+}
+.social-wrapper ul{
+    margin: 0;
+    padding: 0 0 2px 0;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: center;
+}
+.social-wrapper ul li{
+    display: flex;
+    align-items: center;
+}
+.social-wrapper ul li a{
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+.social-wrapper ul li a svg{
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    border-radius: 100vw;
+    background-color: #cfdaf9;
+}
+.weather-logos{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.twclm1{
+    width: 70px;
+    height: 70px;
+}
+.twclm2{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+}
+.twclm3{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+.links{
+    margin-top: 45px;
     padding: 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+.links li a{
+    font-size: 00.875rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    padding: 0 0.5em;
+    margin-top: 10px;
+}
+.links-bold{
+    margin: 27px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+}
+.links-bold li a{
+    border-right: 1px solid;
+    padding: 0 0.5em;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+#dtbrdr{
+    border: none;
+}
+.logos{
+    margin: 7px 0 0 2px;
+    text-align: center;
+}
+.logos a{
+    padding: 5px 2px 5px 5px;
+    line-height: 0;
+}
+.org-footr p{
+    margin: 21px 0 0 0;
+    font-size: 0.875rem;
+    color: #2b2b2b;
+    text-align: center;
+    line-height: 1.4;
+}
+.single-link{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: -0.4em;
+    padding: 0;
+    margin-top: 24px;
+}
+.single-link li a{
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #2b2b2b;
+    padding: 0 0.5em;
+}
+.copyright{
+    margin: 23px 0 0 0;
+}
+.copyright p{
+    color: #2b2b2b;
+    font-size: 0.8125rem;
+    text-align: center;
+}
+.copyright a{
+    margin-top: 25px;
+    display: inline-flex;
     align-items: center;
-} */
+}
+.copyright a span{
+    color: #2b2b2b;
+    text-align: center;
+    font-size: 0.875rem;
+    padding: 3px 10px 0 0;
+}
+.copyright a svg{
+    width: 143px;
+    height: 51px;
+}
+
+
+/* hover styles*/
