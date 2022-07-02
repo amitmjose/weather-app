@@ -1,4 +1,4 @@
-body {
+body{
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -738,6 +738,7 @@ body {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.5;
+  color: #2b2b2b;
 }
 #dtbrdr {
   border: none;
@@ -795,9 +796,7 @@ body {
   width: 143px;
   height: 51px;
 }
-.mobile-bottom-navbar {
-  display: none;
-}
+
 
 /*desktop hover styles*/
 .weather-logo,
@@ -841,3 +840,274 @@ body {
     fill: #fff;
     background-color: #1b4de4;
 } 
+
+/*  desktop hidden elements*/
+
+.mobile-bottom-navbar {
+    display: none;
+}
+.mobile-header-wrapper{
+    display: none;
+}
+.weather-card-mob{
+    display: none;
+}
+.top-content-mobile{
+    display: none;
+}
+
+/*  mobile view*/
+
+@media screen and (max-width:900px) {
+    .wrapper aside{
+        display: none;
+    }
+    .main-wrapper{
+        display: block;
+        margin: 0;
+    }
+    .header{
+        display: none;
+    }
+    .org-foot{
+        display: none;
+    }
+    .top-content{
+      display: none;
+    }
+    .main-content{
+      display: block;
+    }
+
+    .mobile-header-wrapper{
+        display: block;
+        position: sticky;
+        top: 0;
+        
+    }
+    .mobile-header{
+        background-color: #005986;
+        width: 100%;
+        max-height: 62px;
+    }
+    .mbl-hdr{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .twc-moblogo{
+        padding: 11px 7px 11px 10px;
+    }
+    .twc-moblogo svg{
+        fill: #fff;
+        width: 40px;
+        height: auto;
+    }
+    .toi-mob{
+        height: 20px;
+        margin-right: 5px;
+        padding: 18px 0 22px 0;
+    }
+    .toi-mob img{
+        height: inherit;
+        width: inherit;
+    }
+    .search-mbl{
+        max-width: 42%;
+        margin-left: 2px;
+        flex: 1 1 0;
+    }
+    .search-mbl button{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border: none;
+        background: none;
+    }
+    .searchbar-mbl{
+        padding: 0 5px 0 10px;
+        margin-bottom: 4px;
+        border-radius: 20px;
+        border: 0;
+        background: hsla(0,0%,100%,.1);
+        min-height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .searchbar-mbl h1{
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 00.875rem;
+        font-weight: 400;
+        overflow: hidden;
+        line-height: 1.15;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .searchbar-mbl svg{
+        margin-left: 5px;
+        width: 20px;
+        height: auto;
+        flex-shrink: 0;
+        fill: #fff;
+    }
+    .hamburger-mob{
+        border-radius: 50%;
+        padding: 3px 5px 0 5px;
+        border: none;
+        background: none;
+        margin: 0;
+    }
+    .ham-mob{
+        margin-right: 7px;
+        padding-left: 0;
+        width: 26px;
+        fill: #fff;
+        height: auto;
+    }
+    
+    .mobile-bottom-navbar{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .navbar nav{
+        display: flex;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 -4px 5px -2px rgb(0 0 0 / 20%);
+        padding-bottom: calc(min(10px, env(safe-area-inset-bottom)));
+    }
+    .mn{
+        padding: 5px 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        flex: 1;
+    }
+    .mn svg{
+        width: 28px;
+        height: auto;
+        fill: #757575;
+        color: #757575;
+        padding-bottom: 5px;
+    }
+    .mn div{
+        color: #2b2b2b;
+        font-size: 0.75rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+    .today{
+        position: relative;
+    }
+    .today span{
+        position: absolute;
+        top: 16px;
+        left: 0;
+        color: #2b2b2b;
+        font-size: 0.6875rem;
+        line-height: 1.2;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-content{
+        margin: 0 10px;
+    }
+
+    .weather-card-mob{
+        display: block;
+        width: 100%;
+    }
+    .weather-card-mob button{
+        margin: 0;
+        width: 100%;
+        border: none;
+        background-color: initial;
+        padding: 0;
+        text-align: left;
+    }
+    .wthr-card{
+        background-image: url(image/WeatherImage_Foggy-night_2.webp);
+        margin: 0 0px 12px 0px;
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: initial;
+        text-shadow: 0 0 5px rgb(23 36 50 / 50%);
+        border-radius: 6px;
+        box-shadow: none;
+        color: #fff;
+        overflow: hidden;
+        line-height: 1.5em;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .wthr-card-head{
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.55);
+        padding: 13px 16px;
+        text-align: left;
+        display: flex;
+    }
+    .wthr-card-head h1{
+        margin: 0;
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.1em;
+        text-shadow: 0 0 5px rgb(23 36 50 / 50%);
+    }
+    .wthr-card-head span{
+        font-size: 0.8125rem;
+        text-shadow: 0 0 5px rgb(23 36 50 / 50%);
+    }
+    .wthr-card-content{
+        padding: 10px 16px;
+    }
+    .wthr-crd-cnt{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .deg-cond{
+        text-shadow: 0 0 5px rgb(23 36 50 / 50%);
+        display: flex;
+        flex-direction: column;
+    }
+    .deg-cond span{
+        font-size: 3.5rem;
+        line-height: 1;
+        font-weight: 500;
+    }
+    .fog{
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+    .day-nyt{
+        margin-top: 5px;
+        line-height: 1.1;
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    .condition{
+        display: flex;
+        align-items: center;
+    }
+    .condition svg{
+        filter: drop-shadow(0 0 10px rgba(0,0,0,0.55));
+        fill: #fff;
+        width: 64px;
+    }
+
+    .top-content-mobile{
+      display: block;
+  }
+}
