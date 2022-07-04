@@ -548,8 +548,8 @@ body{
   background-color: #1b4de4;
   border: 1px solid #1b4de4;
   border-radius: 16px;
-  padding: 8px 14px;
-  margin: 5px;
+  padding: 8.5px 14px;
+  margin: 4px 5px 5px 5px;
 }
 
 .cards-1 {
@@ -596,6 +596,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .card-1-imag {
   border-radius: 6px;
@@ -855,6 +856,12 @@ body{
 .top-content-mobile{
     display: none;
 }
+.trending{
+  display: none;
+}
+.card-sec-mobile-wrapper{
+  display: none;
+}
 
 /*  mobile view*/
 
@@ -876,6 +883,18 @@ body{
       display: none;
     }
     .main-content{
+      display: block;
+    }
+    .dont-miss{
+      display: none;
+    }
+    .trending{
+      display: block;
+    }
+    .card-sec-wrapper2{
+      display: none;
+    }
+    .card-sec-mobile-wrapper{
       display: block;
     }
 
@@ -937,6 +956,7 @@ body{
         align-items: center;
         justify-content: center;
         height: 100%;
+        text-overflow: ellipsis;
     }
     .searchbar-mbl h1{
         padding: 0;
@@ -946,6 +966,8 @@ body{
         font-weight: 400;
         overflow: hidden;
         line-height: 1.15;
+        text-overflow: ellipsis;
+
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     .searchbar-mbl svg{
@@ -1234,14 +1256,127 @@ body{
       padding: 14px 16px 0 16px;
     }
     .top-stories section header {
-      padding: 0 0 14px 0;
+      padding: 0 0 14px  0;
+    }
+    .top-stories{
+      margin-bottom: 12px;
     }
 
     .top-foot {
-      margin: 7px 0 17px 0;
+      margin: 7px 0 16px 0;
     }
     .top-foot footer a {
       padding: 8.5px 13.5px;
       text-align: center;
+    }
+
+    .card-sec-wrapper{
+      width: calc(100% + 16px);
+    }
+    .bottom-cards-wrapper , .card-sec{
+      overflow: auto;
+      overflow-y: hidden;
+      flex-flow: row nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+    .bottom-cards-wrapper::-webkit-scrollbar , .card-sec::-webkit-scrollbar{
+      display: none;
+    }
+    .weather-bottom-card , .card1 {
+      margin-right: 16px; 
+    }
+    .card-imag-wrapper , .card-1-imag{
+      width: 147px;
+    }
+    .wbc2 , .card1-a{
+      margin: 0;
+      margin-right: 16px;
+    }
+    .weather-heading-wrapper {
+      margin: 0 0 15px 0;
+    }
+    .weather-heading-wrapper span {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.25em;
+    }
+    .weather-imag-wrapper{
+      margin-bottom: 4px;
+    }
+    .weather-india section , .cards-1 section{
+      padding-top: 14px;
+    }
+    .weather-india section header , .cards-1 section header{
+      padding: 0 0 14px 0;
+    }
+    .card-imag-wrapper{
+      margin-bottom: 5px;
+    }
+    
+    .weather-foot footer a{
+      padding: 8px 14px;
+      margin-bottom: 21px;
+    }
+    .weather-india{
+      margin-bottom: 12px;
+    }
+    .cards-1{
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .card1-imag-wrapper{
+      margin-bottom: 4px;
+    }
+    .card1-foot footer a{
+      margin-bottom: 21px;
+    }
+
+    .card-sec-mobile{
+      width: 100%;
+      flex: 1 1 0;
+      border: 0;
+      padding-right: 16px;
+    }
+    .card-sec-mobile a{
+      border: none ;
+      background: none;
+    }
+    .cs-mob-imag-wrapper{
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .cs-mob-imag{
+      width: 100%;
+      border-radius: 6px;
+    }
+    .cs-mob-imag img{
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+    .cs-mob-imag-play{
+      width: 58px;
+      height: 58px;
+      align-self: center;
+      position: absolute;
+    }
+    .cs-mob-imag-play svg{
+      width: 58.38px;
+      fill: #fff;
+      color: #fff;
+    }
+    .card2{
+      padding-bottom: 60px;
+    }
+    .card-sec-mobile-wrapper{
+      margin-bottom: 8px;
+    }
+    .cs-mob-text{
+      margin: 0 0 21px 0;
     }
 }
