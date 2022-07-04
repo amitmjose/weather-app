@@ -799,7 +799,7 @@ body{
 }
 
 
-/*desktop hover styles*/
+/*hover styles*/
 .weather-logo,
 .toi-logo,
 .language,
@@ -811,7 +811,15 @@ body{
 .weather-bottom-card,
 .card1,
 .logos a svg,
-.copyright a {
+.copyright a ,
+ .twc-moblogo svg , 
+ .toi-mob img , 
+ .searchbar-mbl ,
+ .ham-mob ,
+ .mobile-bottom-navbar ,
+ .topmob-content ,
+ .toco2 ,
+ .card-sec-mobile{
   cursor: pointer;
 }
 
@@ -826,7 +834,10 @@ body{
 .card1:hover .card1-text span,
 .links li a:hover,
 .links-bold li a:hover,
-.single-link li a:hover {
+.single-link li a:hover ,
+.topmob-content:hover .toco-text ,
+.toco2:hover .toco2-text ,
+.card-sec-mobile:hover .cs-mob-text{
   cursor: pointer;
   color: #1b4de4;
 }
