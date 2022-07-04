@@ -1124,12 +1124,14 @@ body{
       scrollbar-width: none;
       -ms-overflow-style: none;
     }
+    .topmob-1::-webkit-scrollbar{
+      display: none;
+    }
     .topmob-content{
       flex: 1 1 0;
       border: 0;
     }
     .topmob-content a{
-      width: 275px;
       flex: 1 0 100%;
       border: none;
       background: none;
@@ -1139,6 +1141,7 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 275px;
     }
     .toco-imag{
       border-radius: 6px;
@@ -1150,12 +1153,12 @@ body{
       height: 100%;
     }
     .toco-text{
-      margin-bottom: 15px;
+      margin: 0;
+      margin-bottom: 12px;
       font-size: 1rem;
       font-weight: 400;
       line-height: 1.25em;
       color: #2b2b2b;
-      margin: 0;
       display: inline-block;
     }
     .toco-text span{
@@ -1169,7 +1172,7 @@ body{
     }
     .topmob-2{
       padding: 2px;
-      margin: -2px;
+      margin: -3px;
       width: calc(100% + 16px);
       overflow: auto;
       overflow-y: hidden;
@@ -1179,17 +1182,20 @@ body{
       scrollbar-width: none;
       -ms-overflow-style: none;
     }
+    .topmob-2::-webkit-scrollbar{
+      display: none;
+    }
     .toco2{
       border: 0;
       flex: 1 1 0px;
     }
     .toco2 a{
-      width: 147px;
       flex: 1 0 50%;
       border: none;
       background: none;
     }
     .toco2-imag-wrapper{
+      width: 147px;
       margin-bottom: 8px;
       display: flex;
       justify-content: center;
@@ -1220,5 +1226,22 @@ body{
     }
     .tc2{
       margin-left: 16px;    
+    }
+    .toco-endcard{
+      margin-right: 16px;
+    }
+    .top-stories section {
+      padding: 14px 16px 0 16px;
+    }
+    .top-stories section header {
+      padding: 0 0 14px 0;
+    }
+
+    .top-foot {
+      margin: 7px 0 17px 0;
+    }
+    .top-foot footer a {
+      padding: 8.5px 13.5px;
+      text-align: center;
     }
 }
