@@ -799,6 +799,16 @@ body{
 }
 
 
+
+.open{
+  display: block;
+}
+.close{
+  display: none;
+}
+
+
+
 /*hover styles*/
 .weather-logo,
 .toi-logo,
